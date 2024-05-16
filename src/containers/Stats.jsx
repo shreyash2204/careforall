@@ -31,7 +31,7 @@ const Stats = () => {
   ];
 
   return (
-    <div className="pt-12 min-h-screen w-full flex flex-col items-center">
+    <div className="pt-12 px-4 min-h-screen w-full flex flex-col items-center">
       <div className="text-center mb-10">
         <h2 className="text-3xl font-semibold leading-tight tracking-wider">
           This is the impact
@@ -39,7 +39,7 @@ const Stats = () => {
           helped us achieve in 2022-23
         </h2>
       </div>
-      <div className="stats-grid flex w-[70vw] flex-wrap justify-center items-center gap-x-8 gap-y-16 py-12">
+      <div className="stats-grid flex w-[70vw] max-lg:w-full flex-wrap justify-center items-center gap-x-8 gap-y-16 py-12">
         {stats.map((stat) => {
           return <StatsCard stat={stat} />;
         })}

@@ -38,8 +38,7 @@ const DonationForm = () => {
   //   console.log(step);
   return (
     <div
-      className="relative border-[1px] border-yellow-400 p-4 pt-2 rounded-lg"
-      style={{ width: "max-content" }}>
+      className="relative border-[1px] border-yellow-400 p-4 max-sm:w-full pt-2 rounded-lg">
       <form className="" action="" onSubmit={onSubmit}>
         <div className="h-[30px] relative py-4 mb-4 flex items-center">
           {!isFirstStep && (
@@ -55,7 +54,7 @@ const DonationForm = () => {
         </div>
         {step}
         <div className="mt-4 flex gap-2 justify-end"></div>
-        <button className="w-full p-4 rounded-md bg-yellow-400 mt-8">
+        <button className="w-full py-4 rounded-md bg-yellow-400 mt-4">
           {!isLastStep ? "Next" : "Submit"}
         </button>
       </form>

@@ -25,10 +25,11 @@ const AmountForm = ({ donationAmount, donationPeriod, updateForm }) => {
   ];
 
   return (
-      <div
+      <div 
+      className="sm:grid-cols-[repeat(2,minmax(auto,_200px))] max-sm:grid-cols-[repeat(2,minmax(0,_1fr))]"
         style={{
           display: "grid",
-          gridTemplateColumns: "repeat(2, minmax(auto, 200px))",
+          // gridTemplateColumns: "repeat(2, minmax(0, 200px))",
           gap: "2rem",
           // marginBottom: "2rem",
           placeContent: "center",
@@ -38,7 +39,7 @@ const AmountForm = ({ donationAmount, donationPeriod, updateForm }) => {
           data-name="once"
           className={`${
             donationPeriod === "once" ? "bg-yellow-400" : "bg-blue-300"
-          } py-3 px-8 rounded-lg text-sm font-medium text-gray-800`}
+          } py-4 w-full rounded-lg text-sm font-medium text-gray-800`}
           onClick={(e) => {
             updateForm({ donationPeriod: e.target.dataset.name });
           }}>
@@ -49,7 +50,7 @@ const AmountForm = ({ donationAmount, donationPeriod, updateForm }) => {
           data-name="monthly"
           className={`${
             donationPeriod === "monthly" ? "bg-yellow-400" : "bg-blue-300"
-          } py-3 px-8 rounded-lg text-sm font-medium text-gray-800`}
+          } py-4 w-full rounded-lg text-sm font-medium text-gray-800`}
           onClick={(e) => {
             updateForm({ donationPeriod: e.target.dataset.name });
           }}>

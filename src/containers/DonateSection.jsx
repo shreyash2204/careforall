@@ -3,7 +3,7 @@ import DonationForm from "./DonationForm";
 
 const HelpCard = ({ title, desc }) => {
   return (
-    <div className="group w-11/12 h-[200px] border-2 rounded-xl p-8 flex flex-col gap-5 justify-center hover:bg-yellow-300 ease-in-out duration-300">
+    <div className="group w-11/12 max-sm:w-full h-[200px] border-2 rounded-xl p-8 max-sm:p-4 flex flex-col gap-5  justify-center hover:bg-yellow-300 ease-in-out duration-300">
       <div>
         <h3 className="text-2xl text-yellow-400 font-semibold group-hover:text-black ease-in-out duration-300">
           {title}
@@ -15,8 +15,6 @@ const HelpCard = ({ title, desc }) => {
     </div>
   );
 };
-
-
 
 const DonateSection = () => {
   const helpCardData = [
@@ -35,11 +33,18 @@ const DonateSection = () => {
   ];
 
   return (
-    <div className="grid grid-cols-[.7fr_auto_auto] gap-8 p-12 mt-12 ">
+    <div className="grid lg:grid-cols-[.7fr_auto_auto] max-md:grid-cols-1 gap-8 p-12 mt-8 max-lg:p-4  ">
+      {/* Donation Form */}
+      <div className="lg:col-[3/4] max-sm:w-full justify-self-center">
+        <div className="md:sticky md:top-[100px]">
+          <DonationForm />
+        </div>
+      </div>
+
       {/* Charity Details */}
-      <div className="col-[1/3] max-h-full px-4">
+      <div className="lg:col-[1/3] lg:row-[1] max-h-full px-4 max-sm:p-0">
         <div className="flex flex-col gap-12">
-          <div className="flex flex-col gap-4  ">
+          <div className="flex flex-col gap-4">
             <h2 className="text-4xl font-semibold text-neutral-700">
               What <span className="gloria-font text-yellow-400">we do</span>
             </h2>
@@ -125,12 +130,6 @@ const DonateSection = () => {
               quos earum blanditiis.
             </p>
           </div>
-        </div>
-      </div>
-     {/* Donation Form */}
-      <div className="col-[3/4] justify-self-center">
-        <div className=" sticky top-[100px]">
-          <DonationForm />
         </div>
       </div>
     </div>

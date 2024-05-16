@@ -5,34 +5,37 @@ import Button from "../components/Button";
 
 const Hero = () => {
   return (
-    <div className="min-h-screen max-w-screen overflow-hidden">
-      <div className="flex justify-between h-full">
-        <div className="w-[40%] flex flex-col justify-center items-center gap-12">
-          <div className="w-[400px]">
-            <p className="text-4xl font-semibold leading-tight tracking-wider">
+    <div className="mt-[80px] overflow-hidden">
+      <div className="flex flex-col relative aspect-video">
+        <div className="w-full h-full flex flex-col justify-center items-center gap-4">
+          <div className="w-full text-center mt-0 ">
+            <p className="text-2xl md:text-4xl lg:text-6xl text-white font-semibold leading-tight tracking-wider">
               Let’s ensure
               <span className="gloria-font text-yellow-400"> happy</span> <br />
               <span className="gloria-font text-yellow-400">childhoods </span>
               for <br /> India’s children
             </p>
           </div>
-          <div className="w-[400px]">
-            {/* <button className="bg-yellow-400 px-12 py-4 rounded-full font-medium text-gray-800">
-              Yes! I want to Help!
-            </button> */}
-
-            <Button py={12} px={4} text={"Yes! I want to Help!"} />
+          <div className="">
+            <Button py={4} px={3} text={"Yes! I want to Help!"} />
           </div>
         </div>
-        <div className="w-[60%] relative h-screen">
+        {/* <div className="w-full relative md:h-screen">
           <img
             src={videoPatch}
             alt=""
-            className="w-full absolute -right-16 -bottom-10"
+            className="w-full "
           />
-        </div>
+        </div> */}
+        <video
+          src="/src/assets/3.mp4"
+          autoPlay
+          loop
+          muted
+          className="absolute inset-0 w-full h-full z-[-1]"
+        />
       </div>
-      <div>
+      <div className="w-full">
         <img src={hero2} alt="" className="w-full" />
       </div>
     </div>

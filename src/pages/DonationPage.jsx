@@ -10,7 +10,7 @@ const DonationPage = () => {
       <Hero />
       <DonateSection />
       <Stats />
-      <SlideShow />
+      {/* <SlideShow /> */}
     </div>
   );
 };

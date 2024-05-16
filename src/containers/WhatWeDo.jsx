@@ -43,12 +43,12 @@ const WhatWeDo = () => {
           })}
         </div>
       </div>
-      <div className="h-[90vh] flex">
-        <div className="w-1/2 h-full flex justify-center items-center ">
+      <div className="flex flex-col lg:flex-row justify-center items-center gap-8">
+        <div className="flex-1 h-full flex flex-row justify-center items-center ">
           <div className="flex flex-col gap-8 ">
             <h2 className="text-3xl font-semibold leading-tight tracking-wider">
               Our approach is modeled around <br /> bringing change{" "}
-              <span className="gloria-font text-yellow-400">at all levels</span>
+              <span className="gloria-font text-yellow-400">at all levels</span> 
             </h2>
             <div className="leading-relaxed w-[500px] text-gray-700 text-base">
               <p>
@@ -67,7 +67,7 @@ const WhatWeDo = () => {
             </div>
           </div>
         </div>
-        <div className="w-1/2 h-full flex justify-center items-center">
+        <div className="flex-1 h-full flex justify-center items-center">
           <div className="rotate w-[450px] h-[450px] rounded-full border-[3px] border-dashed border-gray-300 "></div>
           <div className="w-[350px] h-[350px] border-2 border-red-500 absolute">
             <div className="w-[140px] h-[140px] border-2 border-red-500 rounded-full absolute -left-14 -top-14"></div>

@@ -10,7 +10,7 @@ export const DetailInput = ({ type, label, id, dataValue, updateForm }) => {
         type={type}
         id={id}
         value={dataValue}
-        className="w-full p-2 border-2 border-gray-300 rounded-md text-sm"
+        className="w-full px-2 py-4 border-2 border-gray-300 rounded-md text-sm"
         onChange={(e) => {
           updateForm({ [id]: e.target.value });
         }}
@@ -33,9 +33,9 @@ const DetailForm = ({
 }) => {
   return (
     <div
+      className="sm:grid-cols-[repeat(2,minmax(auto,_1fr))] max-sm:grid-cols-[repeat(1,minmax(0,_1fr))]"
       style={{
         display: "grid",
-        gridTemplateColumns: "repeat(2, minmax(auto, 200px))",
         gap: "1rem 2rem",
         // marginBottom: "2rem",
         placeContent: "center",

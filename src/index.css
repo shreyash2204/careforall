@@ -46,13 +46,21 @@
   transform: translateX(-50%);
 }
 
-.stories-slide {
-  display: flex !important;
+ .stories-slide {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr);
   /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px !important; */
-  height: 500px;
+  /* height: 500px; */
   /* margin-inline: 10px !important; */
+} 
+
+@media (max-width: 768px) {
+  .stories-slide {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
 }
 
 .slick-slide > div {
-  margin: 0 20px;
+  padding: 1rem;
 }

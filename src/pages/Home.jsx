@@ -12,10 +12,9 @@ const Home = () => {
     <div>
       <Hero />
       <HelpChildSection />
-      <WhatWeDo />
+      {/* <WhatWeDo /> */}
       <Stats />
       <StoreisAndUpdate />
-      {/* <DonationForm /> */}
     </div>
   );
 };
