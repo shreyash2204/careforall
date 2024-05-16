@@ -7,7 +7,7 @@ import Button from "../components/Button.jsx";
 const HelpChildSection = () => {
   return (
     <div>
-      <div className="w-full flex flex-col items-center gap-12 p-12">
+      <div className="w-full flex flex-col items-center gap-12 p-4 sm:p-12">
         <h2 className="text-4xl font-semibold leading-tight tracking-wider">
           How do you want to <br />
           <span className="gloria-font text-yellow-400">
@@ -24,7 +24,7 @@ const HelpChildSection = () => {
         {/* <button className="bg-yellow-400 px-16 py-4 rounded-full font-medium text-gray-800">
           Donate for Happier Childhoods!
         </button> */}
-        <Button py={16} px={4} text={"Donate for Happier Childhoods!"} />
+        <Button py={4} px={3} text={"Donate for Happier Childhoods!"} />
       </div>
       <Carousle items={items} />
       <div>
