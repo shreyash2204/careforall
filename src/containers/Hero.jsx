@@ -11,8 +11,8 @@ const Hero = () => {
           <div className="w-full text-center mt-0 ">
             <p className="text-2xl md:text-4xl lg:text-6xl text-white font-semibold leading-tight tracking-wider">
               Let’s ensure
-              <span className="gloria-font text-yellow-400"> happy</span> <br />
-              <span className="gloria-font text-yellow-400">childhoods </span>
+              <span className="gloria-font text-[#f47445]"> happy</span> <br />
+              <span className="gloria-font text-[#f47445]">childhoods </span>
               for <br /> India’s children
             </p>
           </div>

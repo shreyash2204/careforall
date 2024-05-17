@@ -1,6 +1,6 @@
 import React from "react";
 import statBanner from "../assets/approach-banner.jpg";
-import items from "../data.js";
+import {stories} from "../data.js";
 import StoriesCarousle from "../components/StoriesCarousle.jsx";
 import YellowStrip from "../assets/crayon-strip-bottom.webp";
 
@@ -15,14 +15,14 @@ const StoreisAndUpdate = () => {
           className="w-[100%] absolute z-[2]"
         />
       </div>
-      <div className="relative z-10">
-        <div className="text-4xl font-semibold leading-relaxed tracking-wider flex justify-center mt-20 sm:mt-28 lg:mt-40">
+      <div className="relative z-10 mb-10">
+        <div className="text-4xl font-semibold leading-relaxed tracking-wider flex justify-center mt-20 sm:mt-28 lg:mt-56">
           <h2 className="text-center">
             Stories <span className="gloria-font text-yellow-400">and</span>{" "}
             Updates
           </h2>
         </div>
-        <StoriesCarousle items={items} />
+        <StoriesCarousle stories={stories} />
       </div>
     </div>
   );

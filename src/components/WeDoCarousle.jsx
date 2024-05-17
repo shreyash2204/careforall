@@ -36,7 +36,7 @@ const WeDoCarousle = ({ whatWeDo }) => {
     swiptoSlide: false,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
-    
+
     responsive: [
       {
         breakpoint: 1023,
@@ -78,7 +78,18 @@ const WeDoCarousle = ({ whatWeDo }) => {
           {whatWeDo.map((weDo) => {
             return (
               <div
-                className={`h-[320px] w-[270px] bg-white shadow-[rgba(100,100,111,0.2)_0px_7px_29px_0px] rounded-md border-b-[6.5px] border-${weDo.border}-500 `}></div>
+                className={`h-[320px] w-[270px] bg-white shadow-[rgba(100,100,111,0.2)_0px_7px_29px_0px] rounded-md border-b-[6.5px] ${weDo.border} wedo-card `}>
+                <div className="w-[150px] ">
+                  <img src={weDo.img} />
+                </div>
+                <div>
+                  <h3 className=" text-sm">
+                    {weDo.title}
+                    <div className="border-b-[2.5px] w-10 mx-auto mt-4 border-[#f47445]">
+                    </div>
+                  </h3>
+                </div>
+              </div>
             );
           })}
         </Slider>

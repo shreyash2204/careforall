@@ -25,7 +25,7 @@ function SamplePrevArrow(props) {
   );
 }
 
-const StoriesCarousle = ({ items }) => {
+const StoriesCarousle = ({ stories }) => {
   const settings = {
     dots: false,
     infinite: true,
@@ -38,27 +38,25 @@ const StoriesCarousle = ({ items }) => {
   };
 
   return (
-    <div className="p-2 md:p-4">
+    <div className="p-2 lg:w-[90%] mx-auto md:p-4">
       <Slider {...settings}>
-        {items.map((item) => {
+        {stories.map((story) => {
           return (
-            <div
-              className="stories-slide rounded-xl border-2 overflow-hidden"
-              style={{
-                display: "grid !important",
-                gridTemplateColumns: "1fr 1fr",
-              }}>
+            <div className="stories-slide rounded-xl border overflow-hidden">
               <div className="">
                 <img
-                  src={item.img}
+                  src={story.img}
                   alt=""
                   className="w-full h-full aspect-auto object-cover"
                 />
               </div>
-              <div className="  flex flex-col justify-center items-center gap-4 ">
-                <h2>{item.title}</h2>
-                <p>{item.desc}</p>
-                <Button text={"Know More"} py={4} px={3} />
+              <div
+                className={`flex flex-col justify-center items-center gap-4 p-8 text-white lg:p-12 ${story.bgColor}`}>
+                <h2 className="text-3xl font-semibold">{story.title}</h2>
+                <p className="text-justify text-sm">{story.desc}</p>
+                <div className="self-start">
+                  <Button text={"Know More"} py={4} px={3} />
+                </div>
               </div>
             </div>
           );

@@ -1,23 +1,21 @@
 import React from "react";
 import Carousle from "../components/Carousle";
-import items from "../data.js";
+import { items } from "../data.js";
 import childBanner from "../assets/children-wide-banner.jpg";
 import Button from "../components/Button.jsx";
 
 const HelpChildSection = () => {
   return (
     <div>
-      <div className="w-full flex flex-col items-center gap-12 p-4 sm:p-12">
-        <h2 className="text-4xl font-semibold leading-tight tracking-wider">
+      <div className="w-full flex flex-col items-center gap-4 sm:gap-8 p-4 mt-6 sm:p-12">
+        <h2 className="text-3xl sm:text-4xl font-semibold leading-tight tracking-wide">
           How do you want to <br />
-          <span className="gloria-font text-yellow-400">
-            help children
-          </span>{" "}
+          <span className="gloria-font text-[#f47445]">help children</span>{" "}
           today?
         </h2>
-        <p className="text-lg font-medium text-gray-600 text-center">
-          Your smallest contribution makes a big difference to children’s lives.{" "}
-          <br />
+        <p className=" font-medium text-gray-600 text-center">
+          Your support can be the catalyst for change, And your smallest
+          contribution makes a big difference to children's lives. <br />
           We count on the generosity of people like you to be able to create
           real change for India’s children!
         </p>

@@ -7,7 +7,7 @@ const CarousleItems = ({ item }) => {
         <img src={item.img} alt="" className="w-full object-cover" />
       </div>
       <div className="h-[max-content] flex flex-col justify-center items-center gap-3  p-4">
-        <div className="font-semibold text-yellow-400 text-lg capitalize ">
+        <div className="font-semibold text-[#f47445] text-lg capitalize ">
           <h2>{item.title}</h2>
         </div>
         <div className="font-medium mb-10 ">

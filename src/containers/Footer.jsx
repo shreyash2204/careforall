@@ -4,29 +4,31 @@ import Button from "../components/Button";
 const Footer = () => {
   return (
     <footer className=" text-white bg-black">
-      <div className="flex justify-evenly items-center gap-12 p-8 min-h-[500px]">
-        <div className="w-1/4 flex flex-col gap-8 items-center">
-          <h1 className="text-4xl font-bold self-start">Logo</h1>
+      <div className="grid grid-rows-[auto_auto_1fr] grid-cols-2 min-[950px]:grid-cols-3 min-[950px]:grid-rows-none place-content-center gap-12 p-8 min-h-[400px]">
+        <div className="w-full flex flex-col gap-6 items-center col-[1/-1] sm:col-[1/2]">
+          <h1 className="text-4xl font-bold self-start">
+            <img src="/src/assets/footer-logo.png" alt="Logo" className="h-12" />
+          </h1>
           <p className="text-sm font-extralight">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quia
             deleniti necessitatibus provident porro quasi voluptatum molestias,
             pariatur animi quisquam!
           </p>
           <div className="self-start">
-            <Button text="Donate" py={12} px={3} />
+            <Button text="Donate" py={4} px={3} />
           </div>
         </div>
-        <div className="footer-links  ">
-          <ul className="flex flex-col gap-4">
-            <li>Home</li>
-            <li>About</li>
-            <li>Our Appraoch</li>
-            <li>Our Impact</li>
-            <li>Volunteering</li>
+        <div className="footer-links w-full col-[1/-1] sm:col-[2/3]">
+          <ul className="flex flex-col items-center text-right w-full gap-4">
+            <li className="hover:text-[#f47445]">Home</li>
+            <li className="hover:text-[#f47445]">About</li>
+            <li className="hover:text-[#f47445]">Our Appraoch</li>
+            <li className="hover:text-[#f47445]">Our Impact</li>
+            <li className="hover:text-[#f47445]">Volunteering</li>
           </ul>
         </div>
-        <div className="newsLetter w-1/4 flex flex-col gap-3">
-          <h3 className="text-2xl font-semibold text-yellow-300">Subscribe</h3>
+        <div className="newsLetter col-[1/-1] row-[1/1] min-[950px]:col-[3/-1] w-full flex flex-col gap-3">
+          <h3 className="text-2xl font-semibold text-[#f47445]">Subscribe</h3>
           <p className="text-sm font-extralight">
             Don’t miss to subscribe to our new feeds, kindly fill the form
             below.

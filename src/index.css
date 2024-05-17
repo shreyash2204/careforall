@@ -13,6 +13,10 @@
   font-weight: 400;
 }
 
+.active {
+  color: #f9a826;
+}
+
 .what-we-do {
   transform: translateX(-50%);
   box-shadow: 0 -10px 20px -5px rgba(115, 115, 115, 0.75);
@@ -46,13 +50,13 @@
   transform: translateX(-50%);
 }
 
- .stories-slide {
+.stories-slide {
   display: grid !important;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 0.75fr;
   /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px !important; */
   /* height: 500px; */
   /* margin-inline: 10px !important; */
-} 
+}
 
 @media (max-width: 768px) {
   .stories-slide {
@@ -63,4 +67,30 @@
 
 .slick-slide > div {
   padding: 1rem;
+}
+
+.bg-gradient {
+  background: rgb(245, 180, 0);
+  background: linear-gradient(
+    338deg,
+    rgba(245, 180, 0, 1) 20%,
+    rgba(244, 116, 69, 1) 75%
+  );
+}
+
+.bg-gradient-2 {
+  background: rgb(245, 164, 0);
+  background: linear-gradient(
+    338deg,
+    rgba(245, 164, 0, 1) 20%,
+    rgba(69, 244, 195, 1) 75%
+  );
+}
+
+.wedo-card {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
 }

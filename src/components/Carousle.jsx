@@ -58,7 +58,7 @@ const Carousle = ({ items }) => {
 
   return (
     <>
-      <div className="p-2 md:p-4">
+      <div className="p-2 w-[95%] mx-auto md:p-4">
         <Slider {...settings}>
           {items.map((item) => {
             return <CarousleItems item={item} />;

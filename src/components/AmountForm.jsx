@@ -38,7 +38,7 @@ const AmountForm = ({ donationAmount, donationPeriod, updateForm }) => {
           type="button"
           data-name="once"
           className={`${
-            donationPeriod === "once" ? "bg-yellow-400" : "bg-blue-300"
+            donationPeriod === "once" ? "bg-gradient" : "bg-blue-300"
           } py-4 w-full rounded-lg text-sm font-medium text-gray-800`}
           onClick={(e) => {
             updateForm({ donationPeriod: e.target.dataset.name });
@@ -49,7 +49,7 @@ const AmountForm = ({ donationAmount, donationPeriod, updateForm }) => {
           type="button"
           data-name="monthly"
           className={`${
-            donationPeriod === "monthly" ? "bg-yellow-400" : "bg-blue-300"
+            donationPeriod === "monthly" ? "bg-gradient" : "bg-blue-300"
           } py-4 w-full rounded-lg text-sm font-medium text-gray-800`}
           onClick={(e) => {
             updateForm({ donationPeriod: e.target.dataset.name });

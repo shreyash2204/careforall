@@ -5,7 +5,7 @@ const HelpCard = ({ title, desc }) => {
   return (
     <div className="group w-11/12 max-sm:w-full h-[200px] border-2 rounded-xl p-8 max-sm:p-4 flex flex-col gap-5  justify-center hover:bg-yellow-300 ease-in-out duration-300">
       <div>
-        <h3 className="text-2xl text-yellow-400 font-semibold group-hover:text-black ease-in-out duration-300">
+        <h3 className="text-2xl text-[#f47445] font-semibold group-hover:text-black ease-in-out duration-300">
           {title}
         </h3>
       </div>
@@ -36,7 +36,7 @@ const DonateSection = () => {
     <div className="grid lg:grid-cols-[.7fr_auto_auto] max-md:grid-cols-1 gap-8 p-12 mt-8 max-lg:p-4  ">
       {/* Donation Form */}
       <div className="lg:col-[3/4] max-sm:w-full justify-self-center">
-        <div className="md:sticky md:top-[100px]">
+        <div className="lg:sticky lg:top-[100px]">
           <DonationForm />
         </div>
       </div>
@@ -46,7 +46,7 @@ const DonateSection = () => {
         <div className="flex flex-col gap-12">
           <div className="flex flex-col gap-4">
             <h2 className="text-4xl font-semibold text-neutral-700">
-              What <span className="gloria-font text-yellow-400">we do</span>
+              What <span className="gloria-font text-[#f47445]">we do</span>
             </h2>
             <p className="font-light text-[15px] ">
               As we step into 2024 let us continue this journey of unlocking
@@ -58,7 +58,7 @@ const DonateSection = () => {
               Children are the foundation of our country. It is crucial to
               ensure that all children have access to quality education, proper
               nutrition, and a safe environment, so they can reach their full
-              potential. Therefore, Child Rights and You (CRY) has been working
+              potential. Therefore, Care For All (CFA) has been working
               towards helping children achieve their dreams and providing them
               with the childhoods they truly deserve.
             </p>
@@ -67,13 +67,13 @@ const DonateSection = () => {
           <div className="flex flex-col gap-4  ">
             <h2 className="text-3xl font-semibold text-neutral-700">
               How will your
-              <span className="gloria-font text-yellow-400">
+              <span className="gloria-font text-[#f47445]">
                 {" "}
                 donation help?
               </span>
             </h2>
             <p className="font-light text-[15px] ">
-              CRY currently operates 102 projects in 19 states and 80 districts,
+              CFA currently operates 102 projects in 19 states and 80 districts,
               including Mumbai, Pune, Bangalore, Kolkata, and Chennai. With your
               support, we address children’s critical needs by working with
               parents, teachers, Anganwadi workers, communities, district and
@@ -103,7 +103,7 @@ const DonateSection = () => {
                 <span className="font-bold">
                   Over 30,000 children re-enrolled in school
                 </span>{" "}
-                through CRY’s Academic and Psychosocial Support Centres
+                through CFA’s Academic and Psychosocial Support Centres
               </li>
               <li>
                 <span className="font-bold">
