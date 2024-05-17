@@ -85,22 +85,22 @@ export const stories = [
     },
     {
       numbers: "94%",
-      desc: "children in CRY project areas, between the ages of 6-18 years, in school",
+      desc: "children in CFA project areas, between the ages of 6-18 years, in school",
       subDesc: "*In the 15-18 age group, our enrolment and retention rate is 13% better than the all India enrolment status – GER. (based on the UDISE+ 2021-22 report)",
     },
     {
       numbers: "92%",
-      desc: "children in CRY project areas, under the age of 5 years, protected from undernourishment",
-      subDesc: "*Only 8% children in CRY project areas are underweight, as compared to 32% all India status as per NFHS 5",
+      desc: "children in CFA project areas, under the age of 5 years, protected from undernourishment",
+      subDesc: "*Only 8% children in CFA project areas are underweight, as compared to 32% all India status as per NFHS 5",
     },
     {
       numbers: "99%",
-      desc: "of adolescent girls, in CRY project areas, between 11-18 years, protected from child marriage",
+      desc: "of adolescent girls, in CFA project areas, between 11-18 years, protected from child marriage",
       subDesc: "",
     },
     {
       numbers: "88%",
-      desc: "children, in CRY project areas, between the ages of 6-18 years, protected from child labour",
+      desc: "children, in CFA project areas, between the ages of 6-18 years, protected from child labour",
       subDesc: "",
     },
   ];
