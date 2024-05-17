@@ -6,7 +6,7 @@ const Stats = () => {
   
 
   return (
-    <div className="pt-12 px-4 w-full flex flex-col items-center">
+    <div className="py-12 px-4 w-full flex flex-col items-center">
       <div className="text-center mb-10">
         <h2 className="text-3xl font-semibold leading-tight tracking-wider">
           This is the impact
