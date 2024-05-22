@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import YellowStrip from "../assets/crayon-strip-bottom.webp";
 import WeDoCarousle from "../components/WeDoCarousle";
 import { whatWeDo } from "../data";
+import images from "../assets/images";
 
 const WhatWeDo = () => {
   return (
@@ -47,14 +48,14 @@ const WhatWeDo = () => {
           <div className="w-[250px] md:w-[300px] h-[250px] md:h-[300px] absolute">
             <div className="w-[90px] md:w-[100px] h-[90px] md:h-[100px] border-[5px] border-amber-500 rounded-full absolute -left-9 sm:-left-12 -top-9 sm:-top-12 grid place-content-center overflow-hidden bg-white">
               <img
-                src="/src/assets/approach-family.jpg"
+                src={images.approachFamily}
                 className="w-14 md:w-16 "
                 alt=""
               />
             </div>
             <div className="w-[90px] md:w-[100px] h-[90px] md:h-[100px] border-[5px] border-amber-500 rounded-full absolute -right-9 sm:-right-12 -top-9 sm:-top-12 grid place-content-center overflow-hidden bg-white">
               <img
-                src="/src/assets/approach-community.jpg"
+                src={images.approachCommunity}
                 className="w-14 md:w-16 "
                 alt=""
               />
@@ -62,7 +63,7 @@ const WhatWeDo = () => {
             <div className="weDo-rotate-center w-[180px] md:w-[210px] h-[180px] md:h-[210px] overflow-hidden rounded-full border-[5px] border-amber-500 p-[6px] md:p-[8px] absolute left-1/2 top-1/2 ">
               <div className="h-full w-full rounded-full overflow-hidden">
                 <img
-                  src="/src/assets/card-2.jpg"
+                  src={images.card2}
                   className="object-cover w-full h-full"
                   alt=""
                 />
@@ -70,14 +71,14 @@ const WhatWeDo = () => {
             </div>
             <div className="w-[90px] md:w-[110px] h-[90px] md:h-[110px] border-[5px] border-amber-500 rounded-full absolute -left-9 sm:-left-12 -bottom-9 sm:-bottom-12 grid place-content-center overflow-hidden bg-white">
               <img
-                src="/src/assets/approach-public.jpg"
+                src={images.approachPublic}
                 className="w-14 md:w-16 "
                 alt=""
               />
             </div>
             <div className="w-[90px] md:w-[110px] h-[90px] md:h-[110px] overflow-hidden border-[5px] border-amber-500 rounded-full absolute -right-9 sm:-right-12 -bottom-9 sm:-bottom-12 grid place-content-center bg-white">
               <img
-                src="/src/assets/approach-govt.jpg"
+                src={images.approachGovt}
                 className="w-14 md:w-16 "
                 alt=""
               />

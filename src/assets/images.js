@@ -9,6 +9,10 @@ import issue3 from "./issue-3.gif";
 import issue4 from "./issue-4.gif";
 import logo from "./logo.png";
 import heroVid from "./3.mp4";
+import approachPublic from "./approach-public.jpg";
+import approachCommunity from "./approach-community.jpg";
+import approachFamily from "./approach-family.jpg";
+import approachGovt from "./approach-govt.jpg";
 
 const images = {
   card1,
@@ -22,6 +26,10 @@ const images = {
   issue4,
   logo,
   heroVid,
+  approachPublic,
+  approachCommunity,
+  approachFamily,
+  approachGovt,
 };
 
 export default images;
