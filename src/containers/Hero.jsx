@@ -1,5 +1,6 @@
 import React from "react";
-import videoPatch from "../assets/video-patch.png";
+import heroVideo from "../assets/3.mp4"
+
 import hero2 from "../assets/hero-2.webp";
 import Button from "../components/Button";
 
@@ -28,7 +29,7 @@ const Hero = () => {
           />
         </div> */}
         <video
-          src="/public/assets/3.mp4"
+          src={heroVideo}
           autoPlay
           loop
           muted

@@ -1,7 +1,7 @@
 import React from "react";
 
 const StatsCard = ({ stat }) => {
-  console.log(stat);
+  // console.log(stat);
   return (
     <div className="w-[320px] h-[max-content] sm:h-[245px] rounded-md shadow-[rgba(0,0,0,0.24)_0px_3px_8px] relative ">
       <div className="stat-pic w-[100px] h-[100px] absolute -top-12 left-1/2 ">

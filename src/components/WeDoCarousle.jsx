@@ -26,7 +26,7 @@ function SamplePrevArrow(props) {
 }
 
 const WeDoCarousle = ({ whatWeDo }) => {
-  console.log(whatWeDo);
+  // console.log(whatWeDo);
   const settings = {
     dots: false,
     infinite: false,
