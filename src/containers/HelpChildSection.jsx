@@ -5,6 +5,9 @@ import childBanner from "../assets/children-wide-banner.jpg";
 import Button from "../components/Button.jsx";
 
 const HelpChildSection = () => {
+
+  console.log(items);
+
   return (
     <div>
       <div className="w-full flex flex-col items-center gap-4 sm:gap-8 p-4 mt-6 sm:p-12">
