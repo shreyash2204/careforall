@@ -28,7 +28,7 @@ const Hero = () => {
           />
         </div> */}
         <video
-          src="/src/assets/3.mp4"
+          src="/public/assets/3.mp4"
           autoPlay
           loop
           muted
