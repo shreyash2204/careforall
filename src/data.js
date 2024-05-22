@@ -1,34 +1,31 @@
-// import card1 from "./assets/card-1.jpg";
-import card2 from "./assets/card-2.jpg";
-import card3 from "./assets/card-3.jpg";
-import card4 from "./assets/card-4.jpg";
-import card5 from "./assets/card-5.jpg";
+import images from "./assets/images";
+
 
 export const items = [
   {
     title: "SEND CHILDREN BACK TO SCHOOL",
     desc: "If not now they might never return",
-    img: `/card-1.jpg`,
+    img: `${images.card1}`,
   },
   {
     title: "SUPPORT KITCHEN GARDENS",
     desc: "Give children sustainable nutrition",
-    img: `${card2}`,
+    img: `${images.card2}`,
   },
   {
     title: "BRIDGE THE EDUCATION GAP",
     desc: "Through academic support centres",
-    img: `${card3}`,
+    img: `${images.card3}`,
   },
   {
     title: "STOP CHILD LABOUR",
     desc: "Help children go to school instead",
-    img: `${card4}`,
+    img: `${images.card4}`,
   },
   {
     title: "HELP UNDERPRIVILEGED MOTHERS",
     desc: "Provide them the nutritional care",
-    img: `${card5}`,
+    img: `${images.card5}`,
   },
 ];
 
@@ -36,25 +33,25 @@ export const stories = [
   {
     title: "From A School Dropout To Becoming A Google Woman Icon",
     desc: "Mamta Gujjar fought against all odds to continue her education and become a footballer! Inspired by her story of struggle, Google selected her for its #SearchForChange campaign.",
-    img: "./src/assets/card-1.jpg",
+    img: `${images.card1}`,
     bgColor: "bg-red-500",
   },
   {
     title: "From A School Dropout To Becoming A Google Woman Icon",
     desc: "Mamta Gujjar fought against all odds to continue her education and become a footballer! Inspired by her story of struggle, Google selected her for its #SearchForChange campaign.",
-    img: "./src/assets/card-1.jpg",
+    img: `${images.card2}`,
     bgColor: "bg-pink-500",
   },
   {
     title: "From A School Dropout To Becoming A Google Woman Icon",
     desc: "Mamta Gujjar fought against all odds to continue her education and become a footballer! Inspired by her story of struggle, Google selected her for its #SearchForChange campaign.",
-    img: "./src/assets/card-1.jpg",
+    img: `${images.card3}`,
     bgColor: "bg-blue-500",
   },
   {
     title: "From A School Dropout To Becoming A Google Woman Icon",
     desc: "Mamta Gujjar fought against all odds to continue her education and become a footballer! Inspired by her story of struggle, Google selected her for its #SearchForChange campaign.",
-    img: "./src/assets/card-1.jpg",
+    img: `${images.card4}`,
     bgColor: "bg-green-500",
   },
 ];

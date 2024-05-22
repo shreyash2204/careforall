@@ -1,8 +1,7 @@
 import React from "react";
-import heroVideo from "../assets/3.mp4"
-
 import hero2 from "../assets/hero-2.webp";
 import Button from "../components/Button";
+import images from "../assets/images";
 
 const Hero = () => {
   return (
@@ -29,7 +28,7 @@ const Hero = () => {
           />
         </div> */}
         <video
-          src={heroVideo}
+          src={images.heroVid}
           autoPlay
           loop
           muted
