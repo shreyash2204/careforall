@@ -1,6 +1,5 @@
 import images from "./assets/images";
 
-
 export const items = [
   {
     title: "SEND CHILDREN BACK TO SCHOOL",
@@ -60,22 +59,22 @@ export const whatWeDo = [
   {
     border: "border-pink-500",
     title: "Education",
-    img: "/src/assets/issue-1.gif",
+    img: `${images.issue1}`,
   },
   {
     border: "border-teal-500",
     title: "Health & Nutrition",
-    img: "/src/assets/issue-2.gif",
+    img: `${images.issue2}`,
   },
   {
     border: "border-purple-500",
     title: "Saftey & Shelter",
-    img: "/src/assets/issue-3.gif",
+    img: `${images.issue3}`,
   },
   {
     border: "border-orange-500",
     title: "Child Participation",
-    img: "/src/assets/issue-4.gif",
+    img: `${images.issue4}`,
   },
 ];
 
