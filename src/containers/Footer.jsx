@@ -5,10 +5,10 @@ import images from "../assets/images";
 const Footer = () => {
   return (
     <footer className=" text-white bg-black">
-      <div className="grid grid-rows-[auto_auto_1fr] grid-cols-2 min-[950px]:grid-cols-3 min-[950px]:grid-rows-none place-content-center gap-12 p-8 min-h-[400px]">
+      <div className="grid grid-rows-[auto_auto_1fr] grid-cols-2 min-[950px]:grid-cols-3 min-[950px]:grid-rows-none place-content-center gap-12 max-[1023px]:gap-4 p-8 md:p-12 min-h-[400px]">
         <div className="w-full flex flex-col gap-6 items-center col-[1/-1] sm:col-[1/2]">
           <h1 className="text-4xl font-bold self-start">
-            <img src={images.logo} alt="Logo" className="h-12" />
+            <img src={images.footerLogo} alt="Logo" className="h-12" />
           </h1>
           <p className="text-sm font-extralight">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quia

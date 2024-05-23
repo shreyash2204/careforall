@@ -13,6 +13,7 @@ import approachPublic from "./approach-public.jpg";
 import approachCommunity from "./approach-community.jpg";
 import approachFamily from "./approach-family.jpg";
 import approachGovt from "./approach-govt.jpg";
+import footerLogo from "./footer-logo.png";
 
 const images = {
   card1,
@@ -30,6 +31,7 @@ const images = {
   approachCommunity,
   approachFamily,
   approachGovt,
+  footerLogo,
 };
 
 export default images;
