@@ -8,7 +8,6 @@ import { Route, Routes } from "react-router-dom";
 function App() {
   return (
     <>
-      <div className="overflow-hidden">
         <Navbar />
         <Routes>
           <Route path="/" exact element={<Home />} />
@@ -17,7 +16,6 @@ function App() {
         {/* <Home /> */}
         {/* <DonationPage /> */}
         <Footer />
-      </div>
     </>
   );
 }
